@@ -35,24 +35,6 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -62,7 +44,53 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+
+}
+
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+/* Layout styles */
+@media screen and (max-width: 320px) {
+  /* Styles for screens <= 320px */
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  /* Styles for mobile (375px) */
+}
+
+@media screen and (min-width: 376px) {
+  /* Styles for larger screens */
+}
+
+/* Colors */
+:root {
+  --green-200: hsl(148, 38%, 91%);
+  --green-600: hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 54%);
+  --white: hsl(0, 0%, 100%);
+  --grey-500: hsl(186, 15%, 59%);
+  --grey-900: hsl(187, 24%, 22%);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
 }
