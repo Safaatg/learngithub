@@ -1,0 +1,43 @@
+#SuccessMessage {
+    background-color: var(--grey-900);
+    color: var(--green-200);
+    width: max-content;
+    padding: 1rem;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+#SuccessMessage .message-header {
+    margin-bottom: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#SuccessMessage .active {
+    display: block;
+    pointer-events: all;
+    animation-name: fadeOut;
+    animation-direction: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    0%, 25%, 50%, 70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Layout */
+@media (max-width: 380px) {
+    /* Styles for smaller screens */
+    #SuccessMessage {
+        width: 50%;
+        top: 2%;
+    }
+  }
